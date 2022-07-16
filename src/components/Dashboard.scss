@@ -1,0 +1,123 @@
+.dashboard {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2.5rem 5rem;
+  border: 2px solid rgba(0, 0, 0, 0.499);
+  background-color: blue;
+  color: white;
+}
+
+.dashboard__heading {
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+
+.dashboard__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(50rem, 100%), 1fr));
+}
+
+.dashboard__free-seats {
+  margin-bottom: 3rem;
+
+  p {
+    font-size: 2rem;
+  }
+  span {
+    font-size: 2.4rem;
+    font-weight: 800;
+  }
+}
+
+.dashboard__stats__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 2rem;
+}
+
+.dashboard__stats__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+
+  span {
+    font-size: 2.4rem;
+    font-weight: 800;
+  }
+}
+
+.dashboard__btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+
+  button {
+    display: inline-block;
+    border: none;
+    width: 12.5rem;
+    height: 3rem;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    color: #212529;
+    background-color: #f1f3f5;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #dee2e6;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    align-self: flex-end;
+  }
+}
+
+.dashboard__prices {
+  margin: 2.5rem 0;
+  h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  form {
+    label {
+      font-size: 1.6rem;
+    }
+    input[type='number'] {
+      width: 4rem;
+      font-size: 1.6rem;
+    }
+    input[type='submit'] {
+      display: inline-block;
+      margin-top: 2rem;
+      border: none;
+      width: 10rem;
+      height: 2.5rem;
+      border-radius: 5px;
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.dashboard__prices--current {
+  display: grid;
+  width: 60%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+
+   span {
+    font-size: 1.6rem;
+   }
+}
